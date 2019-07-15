@@ -1,0 +1,17 @@
+{
+    "title": "我的一本书",
+    "author" : "yu",
+    "description" : "我第一本书的描述，很好",
+    "language" : "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-pro",
+        "back-to-top-button"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": true
+        }
+    }
+}
