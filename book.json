@@ -6,12 +6,19 @@
     "plugins": [
         "-lunr",
         "-search",
-        "search-pro",
-        "back-to-top-button"
+        "chapter-fold",
+        "splitter",
+        "page-treeview",
+        "page-toc-button"
     ],
     "pluginsConfig": {
         "anchor-navigation-ex": {
-            "isShowTocTitleIcon": true
+            "isShowTocTitleIcon": true 
+        }
+    },
+    "links" : {
+        "sidebar" : {
+            "个性链接1" : "https://www.baidu.com"
         }
     }
 }
