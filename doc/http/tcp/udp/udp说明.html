@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>udp说明 · 我的一本书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yu">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../tcp说明.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.baidu.com" target="_blank" class="custom-link">个性链接1</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    http
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../http解析.html">
+            
+                <a href="../../http解析.html">
+            
+                    
+                    http说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../tcp说明.html">
+            
+                <a href="../tcp说明.html">
+            
+                    
+                    tcp说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1.1" data-path="udp说明.html">
+            
+                <a href="udp说明.html">
+            
+                    
+                    udp说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../html/HTML5-特性说明.html">
+            
+                <a href="../../../html/HTML5-特性说明.html">
+            
+                    
+                    HTML5-特性说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >udp说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#udp&#x8BF4;&#x660E;">udp&#x8BF4;&#x660E;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x6211;&#x662F;&#x8BF4;&#x660E;1">&#x6211;&#x662F;&#x8BF4;&#x660E;1</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#11">1.1 </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#111">1.1.1  </a><i></i></div></li>
+<li><div><a href="#112">1.1.2  </a><i></i></div></li>
+<li><div><a href="#113">1.1.3  </a><i></i></div></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#&#x6211;&#x662F;&#x8BF4;&#x660E;2">&#x6211;&#x662F;&#x8BF4;&#x660E;2</a><i></i></div></li>
+<li><div><a href="#&#x6211;&#x662F;&#x8BF4;&#x660E;3">&#x6211;&#x662F;&#x8BF4;&#x660E;3</a><i></i></div></li>
+<li><div><a href="#&#x6211;&#x662F;&#x8BF4;&#x660E;4">&#x6211;&#x662F;&#x8BF4;&#x660E;4</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="udp&#x8BF4;&#x660E;">udp&#x8BF4;&#x660E;</h1>
+<h2 id="&#x6211;&#x662F;&#x8BF4;&#x660E;1">&#x6211;&#x662F;&#x8BF4;&#x660E;1</h2>
+<p>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;     </p>
+<h3 id="11">1.1</h3>
+<h4 id="111">1.1.1</h4>
+<h4 id="112">1.1.2</h4>
+<h4 id="113">1.1.3</h4>
+<h2 id="&#x6211;&#x662F;&#x8BF4;&#x660E;2">&#x6211;&#x662F;&#x8BF4;&#x660E;2</h2>
+<p>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;       </p>
+<h2 id="&#x6211;&#x662F;&#x8BF4;&#x660E;3">&#x6211;&#x662F;&#x8BF4;&#x660E;3</h2>
+<p>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;       </p>
+<h2 id="&#x6211;&#x662F;&#x8BF4;&#x660E;4">&#x6211;&#x662F;&#x8BF4;&#x660E;4</h2>
+<p>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;<br>&#x6211;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#xFF0C;upd&#x662F;&#x9762;&#x5411;&#x65E0;&#x8FDE;&#x63A5;&#x7684;       </p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../tcp说明.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: tcp说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"udp说明","level":"1.2.1.1.1","depth":4,"next":{"title":"HTML","level":"1.3","depth":1,"ref":"","articles":[{"title":"HTML5-特性说明","level":"1.3.1","depth":2,"path":"doc/html/HTML5-特性说明.md","ref":"doc/html/HTML5-特性说明.md","articles":[]}]},"previous":{"title":"tcp说明","level":"1.2.1.1","depth":3,"path":"doc/http/tcp/tcp说明.md","ref":"doc/http/tcp/tcp说明.md","articles":[{"title":"udp说明","level":"1.2.1.1.1","depth":4,"path":"doc/http/tcp/udp/udp说明.md","ref":"doc/http/tcp/udp/udp说明.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","chapter-fold","splitter","page-treeview","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isShowTocTitleIcon":true},"page-toc-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"yu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的一本书","language":"zh-hans","links":{"sidebar":{"个性链接1":"https://www.baidu.com"}},"gitbook":"*","description":"我第一本书的描述，很好"},"file":{"path":"doc/http/tcp/udp/udp说明.md","mtime":"2019-07-18T15:24:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-18T16:01:13.827Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

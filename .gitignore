@@ -1,0 +1,5 @@
+
+# 忽略gitbook生成的项目目录
+_book
+
+node_modules
