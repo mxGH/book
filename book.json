@@ -9,11 +9,16 @@
         "chapter-fold",
         "splitter",
         "page-treeview",
-        "page-toc-button"
+        "page-toc-button",
+        "sectionx",
+        "accordion"
     ],
     "pluginsConfig": {
         "anchor-navigation-ex": {
             "isShowTocTitleIcon": true 
+        },
+        "sectionx": {
+            "tag": "b"
         }
     },
     "links" : {
