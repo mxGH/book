@@ -11,9 +11,24 @@
         "page-treeview",
         "page-toc-button",
         "sectionx",
+        "hide-element",
+        "github",
+        "simple-page-toc",
         "accordion"
     ],
     "pluginsConfig": {
+        "pluginsConfig": {
+            "simple-page-toc": {
+                "maxDepth": 3,
+                "skipFirstH1": true
+            }
+        },
+        "github": {
+            "url": "https://github.com/yulilong/book"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
         "anchor-navigation-ex": {
             "isShowTocTitleIcon": true 
         },
